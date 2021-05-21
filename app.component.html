@@ -1,0 +1,41 @@
+
+
+
+<!--<button> submit</button>
+<app-home></app-home>
+<app-about></app-about>-->
+<!--<app-data1binding></app-data1binding>-->
+<app-pipes></app-pipes>
+<!--<app-newdir></app-newdir>-->
+<div>
+<span>{{title}}</span>app is running!</span>
+</div>
+<!--<app-rohanforms2></app-rohanforms>-->
+    <router-outlet></router-outlet>
+<h1 [appNewdir]> hello</h1>
+<button (click)="info()">add</button>
+<ul *ngFor="let data of product_sev" >
+    <li>
+        {{data.id}}
+    </li>
+</ul>
+<app-home[abc]=names> <h1>hello</h1>
+<h1>hello</h1>
+<h1>{{product_data}}</h1>
+</app-home>
+<form=(ngSubmit)="onsubmit(myForm)"#myForm="ngForm">
+    username:<input type="text" name="a"ngmodel required/>
+    password:<input type="password" name="b"/>
+    <input type="Submit"[disabled]="!myForm.valid"/>
+    <span>*ngIf="!email.valid && email.touched" id="emailHelp" class="form-text text-danger">
+        </span>
+    </form>
+
+
+
+
+
+
+
+
+
